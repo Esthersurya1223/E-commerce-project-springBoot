@@ -11,9 +11,9 @@ pipeline {
             }
             
         }
-        stage ("devlop"){
+        stage ("build"){
             when{
-                branch "build"
+                branch "develop"
             }
             steps{
                 sh 'mvn clean package'
